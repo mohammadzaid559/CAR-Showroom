@@ -1,0 +1,34 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    /* padding: 10px; */
+    background: black;
+    color: white;
+}
+
+.nav-container {
+    display: flex;
+}
+
+.nav-item {
+    margin-top: 2rem;
+}
+
+nav a{
+    color: white;
+    font-weight: bolder;
+    margin-left: 25px;
+    padding: 10px;
+    
+    
+}
+nav a:hover{
+    color: aqua;
+    cursor: pointer;
+}
