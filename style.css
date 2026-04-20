@@ -1,34 +1,225 @@
-body{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  color: white;
+  background: #171540;
+  background: linear-gradient(
+    90deg,
+    rgb(0, 0, 0) 0%,
+    rgb(37, 21, 35) 35%,
+    rgb(17, 3, 20) 100%
+  );
 }
-header{
-    display: flex;
-    justify-content: space-between;
-    /* padding: 10px; */
-    background: black;
-    color: white;
+
+.logo {
+  text-decoration: none;
+  color: inherit;
+}
+header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  position: fixed;
+  z-index: 1000;
+  background: black;
+  color: white;
+}
+header h1 {
+  margin-left: 20px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+header h1:hover {
+  color: aqua;
+  cursor: pointer;
+  text-shadow: 10px 10px 10px rgba(5, 186, 231, 0.8);
 }
 
 .nav-container {
-    display: flex;
+  display: flex;
+  text-decoration: none;
 }
 
 .nav-item {
-    margin-top: 2rem;
+  margin-top: 2rem;
+  margin-right: 40px;
+  text-decoration: none;
 }
 
-nav a{
-    color: white;
-    font-weight: bolder;
-    margin-left: 25px;
-    padding: 10px;
-    
-    
+nav a {
+  color: white;
+  font-weight: bolder;
+  margin-left: 25px;
+  text-decoration: none;
 }
-nav a:hover{
-    color: aqua;
-    cursor: pointer;
+nav a:hover {
+  color: aqua;
+  cursor: pointer;
+  text-shadow: 10px 10px 10px rgba(5, 186, 231, 0.8);
+}
+
+.hero {
+  height: 90vh;
+  background: url("https://images.unsplash.com/photo-1696524147929-56f1e4a05caf?q=80&w=1135&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")
+    no-repeat center/cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center;  */
+}
+
+.btnexplore {
+  text-decoration: none;
+  color: black;
+}
+
+.btns {
+  display: flex;
+  margin-top: 12rem;
+  gap: 1rem;
+}
+
+.btn-explore {
+  text-decoration: none;
+  font-weight: bolder;
+  font-size: large;
+  padding: 8px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: beige;
+  border-radius: 8px;
+}
+
+.btn-explore:hover {
+  padding: 9px;
+  background-color: aqua;
+  box-shadow: 0.5px 0.5px 4px rgb(2, 199, 254);
+}
+
+.btncontact {
+  text-decoration: none;
+  color: black;
+}
+
+.btn-contact {
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bolder;
+  font-size: large;
+  padding: 8px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: beige;
+}
+
+.btn-contact:hover {
+  padding: 9px;
+  background-color: aqua;
+  box-shadow: 0.5px 0.5px 4px rgb(2, 199, 254);
+}
+
+.hero-container {
+  width: 100%;
+  /* height: 500px; */
+  margin-top: 3rem;
+  display: flex;
+}
+.hero-main {
+  width: 700px !important;
+}
+
+.hero-text {
+  font-size: 30px;
+  display: flex;
+  margin-left: 2rem;
+  width: 300px;
+  font-weight: bold;
+  color: beige;
+  text-shadow: 2px 2px 10px rgba(152, 146, 146, 0.8);
+}
+
+.our-cars {
+  font-size: 30px;
+  width: 100%;
+  font-weight: bold;
+  color: beige;
+  text-shadow: 2px 2px 10px rgba(161, 154, 154, 0.8);
+}
+
+.car-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 100px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.car-card {
+  width: 300px;
+  box-shadow: 0 0 10px rgb(95, 94, 94);
+  padding: 10px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.car-card:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.car-card img {
+  width: 100%;
+}
+
+#service {
+  text-align: center;
+  padding-top: 6rem;
+}
+
+#about {
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: beige;
+    text-shadow: 2px 2px 10px rgba(161, 154, 154, 0.8);
+    padding-top: 6rem;
+}
+
+.about-us {
+    text-align: center;
+  box-shadow: 0 0 10px rgb(95, 94, 94);
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+  margin-left: 25%;
+  
+}
+
+.about-text {
+  font-weight: bolder;
+}
+
+#contact {
+  text-align: center;
+  height: 100vh;
+}
+
+footer {
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+.car-section {
+  display: flex;
+  justify-content: center;
+}
+
+.childiv {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
 }
