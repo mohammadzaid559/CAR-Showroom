@@ -267,10 +267,7 @@ footer {
 
 
 
-
-
-/* ================= MOBILE (max-width: 768px) ================= */
-@media (max-width: 768px) {
+@media (max-width: 550px) {
 
   header {
     flex-direction: column;
