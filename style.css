@@ -262,3 +262,106 @@ footer {
   align-items: center;
   height: 300px;
 }
+
+
+
+
+
+
+
+/* ================= MOBILE (max-width: 768px) ================= */
+@media (max-width: 768px) {
+
+  header {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+  }
+
+  header h1 {
+    margin: 10px 0;
+  }
+
+  .nav-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-item {
+    margin: 10px 0;
+  }
+
+  nav a {
+    margin-left: 0;
+  }
+
+  .hero {
+    height: auto;
+    padding: 80px 20px 40px;
+    text-align: center;
+  }
+
+  .hero-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-main {
+    width: 100% !important;
+  }
+
+  .hero-text {
+    width: 100%;
+    font-size: 22px;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .btns {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+  }
+
+  .btn-explore,
+  .btn-contact {
+    width: 80%;
+    text-align: center;
+  }
+
+  .car-container {
+    gap: 30px;
+  }
+
+  .car-card {
+    width: 90%;
+  }
+
+  .about-us,
+  .contact-us {
+    width: 90%;
+    margin-left: 5%;
+    height: auto;
+    padding: 20px;
+  }
+
+  .about-text {
+    font-size: 18px;
+    margin-bottom: 50px;
+  }
+
+  .contact-text {
+    margin-bottom: 50px;
+  }
+
+  .big-about,
+  .big-contact {
+    margin-top: 100px;
+    margin-bottom: 50px;
+  }
+
+  .childiv {
+    height: auto;
+    padding: 20px;
+  }
+}
